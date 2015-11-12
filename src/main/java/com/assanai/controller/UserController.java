@@ -24,7 +24,7 @@ public class UserController {
 
     private Map<String, User> userMap;
 
-    private int i = 0;
+    private int i = 1;
 
     public UserController() {
         userMap = new HashMap<String, User>();
