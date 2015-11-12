@@ -45,7 +45,7 @@
 
     <form:form commandName="user" method="post" action="save-user">
         <form:errors path="*" cssClass="errors" element="div"/>
-        User Name : <form:input path="firstName" cssClass="form-control"/><br>
+        First Name : <form:input path="firstName" cssClass="form-control"/><br>
         Last Name : <form:input path="lastName" cssClass="form-control" /><br>
 
 
