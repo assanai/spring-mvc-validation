@@ -51,7 +51,7 @@ public class UserController {
         return "user-detail";
     }
 
-    @RequestMapping(value = "/save-user", method = RequestMethod.POST)
+    @RequestMapping(value = "/save-user", method = {RequestMethod.POST, RequestMethod.GET})
     private String saveUser(@Valid @ModelAttribute User user, BindingResult bindingResult) {
 
         if (bindingResult.hasErrors()) {
@@ -96,5 +96,5 @@ public class UserController {
 
         return "redirect:/users";
     }
-    
+
 }
